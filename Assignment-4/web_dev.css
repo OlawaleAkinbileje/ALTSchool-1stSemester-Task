@@ -1,0 +1,267 @@
+
+.body {
+  font-family: sans-serif;
+  background-color: rgba(247, 253, 252, 1);
+  font-size: 16px;
+  margin: 0;
+  padding: 90px 0;
+}
+
+p {
+  display: none;
+  color: rgba(90, 90, 90, 1);
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.info-section {
+  padding: 0px;
+  text-align: left;
+}
+
+.return {
+    margin-bottom: 30px;
+}
+
+img {
+  height: auto;
+  margin-left: -15px;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 0;
+  color: rgba(0, 11, 10, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 50px rgba(4, 8, 19, 0.1);
+  border-radius: 10px;
+}
+
+form {
+  width: 100%;
+  display: grid;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(1, 28, 52, 1);
+}
+
+.password {
+  position: relative;
+}
+
+input[type="password"] {
+  padding-right: 30px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 60%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+select {
+  background-color: white;
+  color: rgb(51, 51, 51, 1);
+  appearance: none;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNOC4wMDAxIDExLjMwNWwtNS4yOS01LjMwNWEuNS41IDAgMDEuNzE1LS43MTVsNC41ODUgNC41ODVMMTIuNTg2IDUuNTAwMWEuNS41IDAgMDEuNzE1LjcxNWwtNS4yOTYgNS4zMDVhLjUuNSAwIDAxLS43MTUuMDB6IiBmaWxsPSIjMDAwIi8+PC9zdmc+');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+
+input,
+select {
+  margin-top: 5px;
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+input:focus,
+select:focus {
+  border-color: rgb(0, 191, 166);
+  box-shadow: 0 0 5px rgba(0, 191, 166, 0.5);
+}
+
+select:disabled {
+  background-color: rgb(242, 242, 242);
+  color: rgb(153, 153, 153);
+  cursor: not-allowed;
+}
+
+
+button {
+  grid-column: span 2;
+  background-color: rgb(0, 191, 166, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(0, 143, 122, 1);
+}
+
+.terms {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.terms a {
+  color: rgba(46, 196, 182, 1);
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 90px;
+    padding: 90px 0;
+  }
+
+  .info-section {
+    width: 430px;
+  }
+
+  img {
+    width: 150px;
+    margin-left: -20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .desktop-text {
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .form-container {
+    max-width: 600px;
+    height: 650px;
+    padding: 40px;
+  }
+
+  form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .activity,
+  .password {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .info-section {
+    text-align: left;
+  }
+
+  img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-text {
+    display: block;
+    color: rgba(90, 90, 90, 1);
+    line-height: 1.5;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .form-container {
+    width: 400px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 50px rgba(4, 8, 19, 0.1);
+    border-radius: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  input,
+  select {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .terms {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .terms a {
+    color: rgba(46, 196, 182, 1);
+  }
+}

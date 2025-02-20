@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="check_out.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="wp-pusher">
+      
+      <header class="header-container">
+        
+        <div class="logo">
+          
+          <img
+            src="Assets/images/wppusher-logo copy.png"
+            alt="WP Pusher Logo"
+          />
+        </div>
+        
+        <nav>
+          
+          <ul>
+            <li><a href="../index.html">Assignments</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Learn More</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <main class="main-container">
+        <div class="panel">
+          <section class="panel-section1">
+            <div class="checkout">
+              <h2>Checkout</h2>
+            </div>
+
+            <div class="personal-details">
+              <h4><span>1</span> Your Basic Information</h4>
+              <form action="">
+                <div class="personal-information">
+                  <div>
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      placeholder="Jane"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      placeholder="Doe"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="personal-email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    placeholder="janedoe@example.com"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="card-section">
+              <h4><span>2</span> Your Payment Information</h4>
+              <form action="">
+                <div class="card-num">
+                  <label for="card-num1">Credit Card</label>
+                  <div class="inputs">
+                    <input
+                      type="text"
+                      id="card-num1"
+                      placeholder="Card Number"
+                      required
+                    />
+                    <input type="text" placeholder="MM / YY" required />
+                    <input type="text" placeholder="CVC" required />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="help">
+              <button class="buy-button">Buy WP Pusher</button>
+              <div>
+                <span class="fa-solid fa-question">?</span>
+                <p>
+                  <span class="need">Need any help?</span> Don't hesitate to
+                  <a href="#">contact support!</a>
+                </p>
+              </div>
+              <p class="powered">Powered by <span>Stripe</span></p>
+            </div>
+          </section>
+
+          <aside class="summary">
+            <h3>Freelancer</h3>
+
+            <div class="plan">
+              <div>
+                <span>$</span>
+                <p>99</p>
+                <span>/year</span>
+              </div>
+              <p>Automatically renews after 1 year</p>
+            </div>
+
+            <ul class="details">
+              <li>
+                <img src="Assets/images/select.svg" alt="select.svg" /> Use on 5
+                client sites
+              </li>
+              <li>
+                <img src="Assets/images/select.svg" alt="select.svg" /> Private
+                repositories
+              </li>
+              <li>
+                <img src="Assets/images/select.svg" alt="select.svg" /> Email
+                support
+              </li>
+            </ul>
+            <div class="agency">
+              <p>Need <span>20</span> client sites?</p>
+              <a href="#">Switch to the Agency plan</a>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="review">
+              <p>
+                FTP is horrible to deal with. <span>WP Pusher</span> solves that issue, and
+                the customer support is awesome!
+              </p>
+              <div class="reviewer">
+                <img src="Assets/images/Bitmap.svg" alt="Reviewer" />
+                <h3>Kirk Beard</h3>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <footer class="footer">
+          <p>© 2018 WP Pusher IVS · <a href="#">Terms of Service</a></p>
+        </footer>
+      </main>
+    </section>
+  </body>
+</html>

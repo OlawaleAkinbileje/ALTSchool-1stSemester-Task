@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Development-Training-Sign-Up</title>
+    <link href="web_dev.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <section class="info-section">
+        <div class="return">
+          <a  href="/index.html">⬅</a>
+        </div>
+        
+        <div>
+          <img src="Assets/Images/Logo.svg" alt="Logo-Image" />
+          <h1>For Individuals</h1>
+          <p class="desktop-text">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+          <p class="mobile-text">
+            Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.
+          </p>
+        </div>
+      </section>
+      <section class="form-container">
+        <form action="#" method="post">
+          <label for="full-name"
+            >First Name
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Tolu"
+              required
+            />
+          </label>
+
+          <label for="last-name"
+            >Last Name
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder=""
+              required
+            />
+          </label>
+
+          <label for="gender"
+            >Gender
+            <select id="gender" name="gender" required>
+              <option value="">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label for="date-of-birth"
+            >Date of Birth
+            <input
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              required
+            />
+          </label>
+
+          <label for="weight"
+            >Weight (KG)
+            <input
+              type="number"
+              id="weight"
+              name="weight"
+              min="0"
+              step="0.1"
+              placeholder="Enter Weight"
+              required
+            />
+          </label>
+          <label for="height"
+            >Height (CM)
+            <input
+              type="number"
+              id="height"
+              name="height"
+              min="0"
+              step="1"
+              placeholder="Enter height here."
+              required
+            />
+          </label>
+
+          <label class="activity" for="activity"
+            >Activity Level
+            <select id="activity" name="activity" required>
+              <option value="">Select here</option>
+              <option value="low">Low</option>
+              <option value="moderate">Moderate</option>
+              <option value="high">High</option>
+            </select>
+          </label>
+
+          <label class="password" for="password"
+            >Password
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+            <span class="toggle-password"id="togglePassword" >👁️</span>
+          </label>
+
+          <button type="submit">Register</button>
+        </form>
+        <div class="terms">
+          By clicking Register, you agree to our
+          <a href="https://www.altschoolafrica.com/terms-and-conditions">
+            Terms of use
+          </a>
+          and
+          <a href="https://altschoolafrica.com/terms-and-conditions">
+            Privacy Policy
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+  const passwordInput = document.getElementById("password");
+
+  togglePassword.addEventListener("click", () => {
+    // Toggle the input type
+    const type = passwordInput.type === "password" ? "text" : "password";
+    passwordInput.type = type;
+
+    // Change the button text/icon
+    togglePassword.textContent = type === "password" ? "👁️" : "🙈";
+  });
+    </script>
+  </body>
+</html>
