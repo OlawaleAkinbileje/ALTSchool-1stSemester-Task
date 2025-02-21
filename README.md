@@ -1,18 +1,7 @@
-# HTML & CSS Assignment Tasks
+# CSS Assignment Tasks
 
 ## Description
-This project consists of six different tasks, divided into two categories: <strong>HTML tasks</strong> and <strong>CSS tasks</strong>. The goal is to practice HTML structuring, form creation, media elements, and CSS styling by replicating given designs.
-
-## Project Structure
-The assignment is split into two main parts:
-
-### <strong>1. HTML Tasks</strong>
-- <strong>Biography & Bio-data Page</strong>:  
-  A webpage displaying personal details, including a biography, bio-data, and other relevant information.
-- <strong>ALTSchool Africa Form</strong>:  
-  A replication of ALTSchool Africa form using proper HTML form elements.
-- <strong>Media Elements Showcase</strong>:  
-  A webpage demonstrating the use of all media elements in HTML, including images, videos, audio, and iframes.
+This project consists of six different tasks, divided into two categories: <strong>CSS tasks</strong>. The goal is to practice  and CSS styling by replicating given designs.
 
 ### <strong>2. CSS Tasks</strong>>
 - <strong>Design Replications</strong>:  
@@ -24,8 +13,7 @@ The assignment is split into two main parts:
   - <strong>Checkout Page</strong>: A checkout page styled using CSS.
 
 ## Technologies Used
-- <strong>HTML5</strong>: Structuring content and creating forms.
-- <strong>CSS3</strong>: Styling pages with layouts, colors, and typography.
+- <strong>CSS</strong>: Styling pages with layouts, colors, and typography.
 - <strong>Figma Designs</strong>: Reference for CSS design replication.
 
 ## Installation & Setup
